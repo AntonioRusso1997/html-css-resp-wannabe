@@ -124,3 +124,54 @@ img {
   }
 }
 /* / Mobile view */
+
+/* Tablet view -BONUS- */
+@media (min-width: 421px) and (max-width: 768px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .row {
+    margin: 0;
+    width: 100%;
+  }
+
+  .container .row img {
+    height: 130px;
+    padding: 5px;
+    filter: grayscale();
+  }
+
+  #steps,
+  #lezioni,
+  #why {
+    padding: 5px;
+  }
+
+  #lezioni, #why {
+    background: rgb(182,0,0);
+background: radial-gradient(circle, rgba(182,0,0,1) 0%, rgba(221,221,221,1) 100%);
+  }
+
+  #steps {
+    background: rgb(43,182,0);
+background: radial-gradient(circle, rgba(43,182,0,1) 0%, rgba(221,221,221,1) 100%);
+    padding: 10px;
+  }
+
+  #steps .row .left,
+  #steps .row .central,
+  #steps .row .right {
+    float: left;
+    width: calc(100% / 2);
+  }
+
+  #why .row>.first,
+  #why .row>.second,
+  #why .row>.third {
+    margin-top: 20px;
+  }
+}
+/* / Tablet view -BONUS- */
